@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: .93;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -56,8 +56,40 @@
       width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px #f5894b; }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-in-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #f5894b; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out; }
+    .menu .nav-link:hover {
+      color: #f5894b; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
 
 * {
   box-sizing: border-box; }
@@ -91,7 +123,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
