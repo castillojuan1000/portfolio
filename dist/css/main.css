@@ -161,7 +161,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -211,7 +211,9 @@ main {
     margin-bottom: 3rem;
     transition: all 0.5s ease-in-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      /* padding: 0.5rem 1.5rem; */
+      box-shadow: 5px 5px 5px #696969;
+      padding: 1.5rem 3rem;
       background: #f5894b;
       color: #000; }
       .boxes div:hover span {
@@ -271,7 +273,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

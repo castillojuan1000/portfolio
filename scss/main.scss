@@ -150,7 +150,10 @@ main {
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      
+      /* padding: 0.5rem 1.5rem; */
+      box-shadow: 5px 5px 5px #696969;
+      padding: 1.5rem 3rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
       span {
@@ -164,6 +167,7 @@ main {
 .btn {
   display: block;
   padding: 0.5rem 1rem;
+  
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
