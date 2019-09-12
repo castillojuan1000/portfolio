@@ -161,7 +161,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -185,37 +185,19 @@ main {
     border-bottom: #f5894b 5px solid;
     margin-top: 10vh; }
 
-/* .projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-
-  img {
-    display: block;
-    width: 100%;
-    height: 35vh;
-    border: 3px white solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-  }
-} */
 .projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
 
 .container {
-  position: relative; }
+  position: relative;
+  border: 3px solid white; }
 
 img {
   display: block;
   width: 100%;
-  height: 35vh;
-  border: 3px white solid; }
+  height: 35vh; }
 
 .overlay {
   position: absolute;
@@ -225,21 +207,19 @@ img {
   overflow: hidden;
   width: 100%;
   height: 0;
-  /* transition: .5s ease; */
   transition: all 0.5s ease-in-out; }
 
-img:hover {
-  opacity: 0.5;
+.container:hover {
   border-color: #f5894b;
-  transition: all 0.5s ease-in-out; }
+  box-shadow: 5px -5px 5px #696969; }
 
 .container:hover .overlay {
   bottom: 0;
   height: 100%;
-  z-index: -1; }
+  background-color: rgba(73, 73, 73, 0.5); }
 
 .text {
-  color: #f5894b;
+  color: #e75c0d;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -248,6 +228,27 @@ img:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-in-out; }
+    .boxes div:hover {
+      /* padding: 0.5rem 1.5rem; */
+      box-shadow: 5px 5px 5px #696969;
+      padding: 1.5rem 3rem;
+      background: #f5894b;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -303,7 +304,7 @@ img:hover {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
