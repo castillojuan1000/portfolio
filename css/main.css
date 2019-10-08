@@ -345,7 +345,7 @@ img {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 400px) and (max-width: 500px) {
   main {
     padding: 2rem; }
     main #home h1 {
@@ -354,4 +354,7 @@ img {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
+    grid-template-columns: 1fr; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
