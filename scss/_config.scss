@@ -3,6 +3,7 @@ $secondary-color: #f5894b;
 $show-home-image: true;
 $home-image: url(../img/backgroundImage.jpg);
 $backgrond-opacity: 0.5; //spelled wrong
+$font-weight: 600;
 
 @mixin easeOut {
   transition: all 0.5s ease-in-out;

@@ -96,6 +96,13 @@ main {
 
   .job-1 {
     grid-area: job1;
+
+    h3{
+      // color: $secondary-color;
+      font-weight: $font-weight;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
     
     .icons{
       display: grid;
@@ -105,25 +112,19 @@ main {
       p{
         margin: 2px;
         color: $secondary-color;
+        font-weight: $font-weight;
       }
     }
   }
   .job-2 {
     grid-area: job2;
 
-    .icons{
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-columns: repeat(3, 1fr);
+    h3{
+      // color: $secondary-color;
+      font-weight: $font-weight;
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
-      p{
-        margin: 2px;
-        color: $secondary-color;
-      }
-  }
-  
-  .job-3 {
-    grid-area: job3;
 
     .icons{
       display: grid;
@@ -133,6 +134,29 @@ main {
       p{
         margin: 2px;
         color: $secondary-color;
+        font-weight: $font-weight;
+      }
+  }
+  
+  .job-3 {
+    grid-area: job3;
+
+    h3{
+      // color: $secondary-color;
+      font-weight: $font-weight;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .icons{
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+      p{
+        margin: 2px;
+        color: $secondary-color;
+        font-weight: $font-weight;
       }
   }
   

@@ -161,7 +161,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -175,31 +175,46 @@ main {
     font-size: 1.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
+    .about-info .job-1 h3 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 2rem; }
     .about-info .job-1 .icons {
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: repeat(3, 1fr); }
       .about-info .job-1 .icons p {
         margin: 2px;
-        color: #f5894b; }
+        color: #f5894b;
+        font-weight: 600; }
   .about-info .job-2 {
     grid-area: job2; }
+    .about-info .job-2 h3 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 2rem; }
     .about-info .job-2 .icons {
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: repeat(3, 1fr); }
     .about-info .job-2 p {
       margin: 2px;
-      color: #f5894b; }
+      color: #f5894b;
+      font-weight: 600; }
   .about-info .job-3 {
     grid-area: job3; }
+    .about-info .job-3 h3 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 2rem; }
     .about-info .job-3 .icons {
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: repeat(3, 1fr); }
     .about-info .job-3 p {
       margin: 2px;
-      color: #f5894b; }
+      color: #f5894b;
+      font-weight: 600; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
@@ -293,7 +308,10 @@ img {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .about-info {
+    grid-template-areas: "bioimage bio" "job1 job2" "job3 job3";
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -324,8 +342,8 @@ img {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
+    grid-template-areas: "bioimage bio" "job1 job2" "job3 job3";
+    grid-template-columns: repeat(2, 1fr); }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -338,4 +356,7 @@ img {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
+    grid-template-columns: 1fr; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
