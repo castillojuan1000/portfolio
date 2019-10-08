@@ -15,6 +15,7 @@ $font-weight: 600;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      background-repeat: no-repeat;
 
       &:after {
         content: "";
