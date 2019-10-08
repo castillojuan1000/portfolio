@@ -96,15 +96,46 @@ main {
 
   .job-1 {
     grid-area: job1;
+    
+    .icons{
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      p{
+        margin: 2px;
+        color: $secondary-color;
+      }
+    }
   }
   .job-2 {
     grid-area: job2;
-  }
 
+    .icons{
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+      p{
+        margin: 2px;
+        color: $secondary-color;
+      }
+  }
+  
   .job-3 {
     grid-area: job3;
-  }
 
+    .icons{
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+      p{
+        margin: 2px;
+        color: $secondary-color;
+      }
+  }
+  
   .job {
     background: lighten($primary-color, $amount: 5);
     padding: 0.5rem;
@@ -172,7 +203,7 @@ img {
 .container:hover{
   
   border-color: $secondary-color;
-  box-shadow: 5px -5px 5px #696969;
+  
   
 }
 
@@ -181,7 +212,7 @@ img {
   height: 100%;
   // z-index: -1;
   // @include easeOut;
-  background-color: rgba(lighten($color: $primary-color, $amount: 2), 0.5)
+  background-color: rgba(lighten($color: $primary-color, $amount: 2), 0.7)
   
 }
 
