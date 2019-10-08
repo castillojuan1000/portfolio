@@ -353,7 +353,4 @@ img {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }

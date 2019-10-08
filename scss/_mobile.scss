@@ -118,15 +118,15 @@
     grid-template-columns: 1fr;
   }
 
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
+  // .about-info {
+  //   grid-template-areas:
+  //     "bioimage"
+  //     "bio"
+  //     "job1"
+  //     "job2"
+  //     "job3";
 
-    grid-template-columns: 1fr;
-  }
+  //   grid-template-columns: 1fr;
+  // }
 }
 
