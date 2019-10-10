@@ -106,7 +106,7 @@ main {
     
     .icons{
       display: grid;
-      grid-gap: 2rem;
+      grid-gap: 1rem;
       grid-template-columns: repeat(3, 1fr);
 
       p{
@@ -128,7 +128,7 @@ main {
 
     .icons{
       display: grid;
-      grid-gap: 2rem;
+      grid-gap: 1rem;
       grid-template-columns: repeat(3, 1fr);
     }
       p{
@@ -150,7 +150,7 @@ main {
 
     .icons{
       display: grid;
-      grid-gap: 2rem;
+      grid-gap: 1rem;
       grid-template-columns: repeat(3, 1fr);
     }
       p{
@@ -164,6 +164,7 @@ main {
     background: lighten($primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    
     margin-top: 10vh;
   }
 }
