@@ -102,6 +102,16 @@
 
   .projects {
     grid-template-columns: 1fr;
+
+    .overlay{
+
+      p{
+        margin: 0 10px;
+        margin-top: 1vh;
+        font-size: .5rem;
+        font-weight: 200;
+      }
+    }
   }
 
 
