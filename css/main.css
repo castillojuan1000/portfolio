@@ -369,7 +369,7 @@ img {
       margin: 0 10px;
       margin-top: 1vh;
       font-size: .7rem;
-      font-weight: 500; }
+      font-weight: 400; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
