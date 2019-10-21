@@ -368,8 +368,8 @@ img {
     .projects .overlay p {
       margin: 0 10px;
       margin-top: 1vh;
-      font-size: .6rem;
-      font-weight: 200; }
+      font-size: .7rem;
+      font-weight: 500; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
