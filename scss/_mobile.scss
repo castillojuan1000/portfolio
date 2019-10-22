@@ -66,6 +66,10 @@
       "job3";
 
     grid-template-columns: 1fr;
+
+    .bio{
+      font-size: 1rem;
+    }
   }
 
  
@@ -108,7 +112,7 @@
       p{
         margin: 0 10px;
         margin-top: 1vh;
-        font-size: .7rem;
+        font-size: .8rem;
         font-weight: 400;
       }
     }
@@ -124,6 +128,10 @@
       "job3";
 
     grid-template-columns: 1fr;
+
+    .bio{
+      font-size: 1rem;
+    }
   }
 
 }
