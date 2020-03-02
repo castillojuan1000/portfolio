@@ -247,7 +247,7 @@ img {
   .overlay .text p {
     margin: 0 10px;
     margin-top: 1vh;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: 500; }
   .overlay .icons {
     display: grid;
@@ -319,7 +319,12 @@ img {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+    .projects .overlay p {
+      margin: 0 10px;
+      margin-top: 1vh;
+      font-size: .7rem;
+      font-weight: 400; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -355,7 +360,12 @@ img {
     .about-info .bio {
       font-size: 1rem; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .overlay p {
+      margin: 0 10px;
+      margin-top: 1vh;
+      font-size: .66rem;
+      font-weight: 400; } }
 
 @media screen and (max-width: 500px) {
   main {
