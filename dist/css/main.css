@@ -370,7 +370,7 @@ img {
     .projects .overlay p {
       margin: 0 10px;
       margin-top: 1vh;
-      font-size: .8rem;
+      font-size: .66rem;
       font-weight: 400; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
