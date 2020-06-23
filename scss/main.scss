@@ -75,19 +75,37 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
+    "imageicons bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
-  .bio-image {
-    grid-area: bioimage;
+  .image-icons{
+    grid-area: imageicons;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-    width: 150px;
-    height: 150px;
+    .bio-image {
+      border-radius: 50%;
+      border: $secondary-color 3px solid;
+      width: 150px;
+      height: 150px;
+
+      flex: 1;
+    }
+
+    .social-icons{
+      flex: 1;
+      margin: 1rem;
+      
+      a{
+        padding: 5px;
+      }
+    }
   }
+  
 
   .bio {
     grid-area: bio;
