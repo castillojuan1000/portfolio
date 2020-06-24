@@ -211,7 +211,7 @@ main {
 //TEST 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .container {
@@ -281,13 +281,13 @@ img {
   height: 100%;
   // z-index: -1;
   // @include easeOut;
-  background-color: rgba(lighten($color: $primary-color, $amount: 2), 0.7)
+  background-color: rgba(lighten($color: $primary-color, $amount: 2), 0.9)
   
 }
 
 
 
-//TODO: fixed this shit 
+//TODO: fixed this 
 .text {
   // color: darken($secondary-color, $amount: 15);
   
