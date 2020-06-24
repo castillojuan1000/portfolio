@@ -234,7 +234,7 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr); }
 
 .container {
@@ -275,7 +275,7 @@ img {
 .container:hover .overlay {
   bottom: 0;
   height: 100%;
-  background-color: rgba(73, 73, 73, 0.7); }
+  background-color: rgba(73, 73, 73, 0.9); }
 
 .text {
   position: relative;
