@@ -161,7 +161,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "imageicons bio bio" "job1 job2 job3";
+  grid-template-areas: "imageicons bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .image-icons {
     grid-area: imageicons;
@@ -234,7 +234,7 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr); }
 
 .container {
@@ -275,7 +275,7 @@ img {
 .container:hover .overlay {
   bottom: 0;
   height: 100%;
-  background-color: rgba(73, 73, 73, 0.7); }
+  background-color: rgba(73, 73, 73, 0.9); }
 
 .text {
   position: relative;
@@ -366,7 +366,7 @@ img {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "imageicons" "bio" "job1" "job2" "job3";
+    grid-template-areas: "imageicons" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
     .about-info .bio {
       font-size: 1rem; }
@@ -394,7 +394,7 @@ img {
       font-size: .66rem;
       font-weight: 400; }
   .about-info {
-    grid-template-areas: "imageicons" "bio" "job1" "job2" "job3";
+    grid-template-areas: "imageicons" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
     .about-info .bio {
       font-size: 1rem; } }
